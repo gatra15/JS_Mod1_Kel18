@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Pengenalan Javascript</title>
+    <title>Tugas Javascript</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <input type="text" onkeyup="checkOnKeyUp(this)">
-    <script src="./script.js"></script>
-    <script src="./data.js"></script>
+    <input type="text" id="input" onkeyup="dataFilter()">
+    <section id="result">
+        <h3 id="search-not-found" style="display: none;">Data Tidak Ditemukan</h3>
+        <div id="search-result">
+        </div>
+    </section>
   </body>
+  <script src="./script.js"></script>
 </html>
