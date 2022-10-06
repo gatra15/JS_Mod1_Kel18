@@ -14,7 +14,7 @@
                   const regex = new RegExp(input.value.toLowerCase(), 'i')
 
                   
-                  return regex.test(data.nama_lengkap.toLowerCase()) || data.nim == input.value.toLowerCase();
+                  return regex.test(data.nama_lengkap.toLowerCase()) || data.nim == input.value.toLowerCase() || regex.test(data.nama_panggilan.toLowerCase());
               })
 
               if (filterData.length > 0) {
